@@ -16,9 +16,7 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-  .connect(
-    "mongodb+srv://mustaphanoori78:RgwmpRis4S8KM6OO@cluster0.d5ecifu.mongodb.net/Node-Api?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect()
   .then(() => console.log("Connected to database!"))
   .catch(() => {
     console.log("Connection Failed!");
